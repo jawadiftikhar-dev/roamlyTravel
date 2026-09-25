@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Roamly — By jawadiftikhar.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-wrap">
+            <a href="roamly_travel.html" class="logo">
+                <span class="logo-r">R</span>
+                <span class="logo-text">ROAMLY</span>
+                <span class="logo-vol">VOL. I</span>
+            </a>
+            <nav class="menu" id="menu">
+                <a href="roamly_travel.html" class="menu-link">Index</a>
+                <a href="about_us.html" class="menu-link">About</a>
+                <a href="contact_us.html" class="menu-link is-active">Contact</a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-hero is-small">
+        <div class="wrap">
+            <div class="hero-top">
+                <span>// Studio Contact Directory</span>
+                <span>Reply within 24 hrs</span>
+            </div>
+            <h1>Let's talk <em>travel</em>.</h1>
+            <p>Questions, ideas, or just want to say hello — we read every message.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="wrap contact-wrap">
+
+            <aside class="contact-side">
+                <span class="eyebrow">// Direct</span>
+                <h2>Reach us directly.</h2>
+
+                <div class="info-row">
+                    <span class="info-label">Email</span>
+                    <a href="mailto:studio@roamly.archive">studio@roamly.archive</a>
+                </div>
+
+                <div class="info-row">
+                    <span class="info-label">Phone</span>
+                    <a href="tel:+15550123456">+1 (555) 012-3456</a>
+                </div>
+
+                <div class="info-row">
+                    <span class="info-label">Studio</span>
+                    <p>221 Wanderlust Ave, Suite 12<br>Lisbon, Portugal</p>
+                </div>
+
+                <div class="info-row">
+                    <span class="info-label">Hours</span>
+                    <p>Mon — Fri · 9:00 – 18:00 (WET)</p>
+                </div>
+            </aside>
+
+            <div class="contact-form-wrap">
+                <span class="eyebrow">// Send a Message</span>
+                <h2>Fill in the form.</h2>
+                <p class="contact-lede">We'll get back to you within one business day.</p>
+
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your full name" required>
+                        <span class="field-error" data-error-for="name"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@example.com" required>
+                        <span class="field-error" data-error-for="email"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="What's this about?">
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="6" placeholder="Tell us what's on your mind…" required></textarea>
+                        <span class="field-error" data-error-for="message"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark btn-lg btn-block">Send Message</button>
+                    <p class="form-ok" id="formSuccess" hidden>Thank you. Your message has been sent.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq-sec">
+        <div class="wrap">
+            <div class="head">
+                <div>
+                    <span class="eyebrow">// Quick Answers</span>
+                    <h2>Frequently asked <em>questions</em>.</h2>
+                </div>
+            </div>
+            <div class="faq-grid">
+                <details class="faq">
+                    <summary>How often do you update recommendations?</summary>
+                    <p>Our destination archive is reviewed and refreshed on a monthly basis.</p>
+                </details>
+                <details class="faq">
+                    <summary>Can I suggest a destination?</summary>
+                    <p>Absolutely — send us a message and tell us about a place you love.</p>
+                </details>
+                <details class="faq">
+                    <summary>Do you offer personalized itineraries?</summary>
+                    <p>Not yet, but it's coming. Subscribe to the newsletter for updates.</p>
+                </details>
+                <details class="faq">
+                    <summary>Is Roamly free to use?</summary>
+                    <p>Yes — all our recommendations are free, and always will be.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap footer-wrap">
+            <div class="foot-brand">
+                <div class="logo">
+                    <span class="logo-r">R</span>
+                    <span class="logo-text">ROAMLY</span>
+                </div>
+                <p>A curated visual archive of remarkable places.</p>
+                <div class="foot-social">
+                    <a href="https://www.linkedin.com/in/jawadiftikhar-dev/" target="_blank">Linkedin</a>
+                    <a href="https://github.com/jawadiftikhar-dev/roamlyTravel" target="_blank">GitHub</a>
+                    <a href="https://www.figma.com/@jawadiftikhar" target="_blank">Figma</a>
+                </div>
+            </div>
+            <div class="foot-col">
+                <h4>Index</h4>
+                <a href="roamly_travel.html">Home</a>
+                <a href="about_us.html">About</a>
+                <a href="contact_us.html">Contact</a>
+            </div>
+            <div class="foot-col">
+                <h4>Collections</h4>
+                <a href="#" onclick="quickSearch('beach')">Beaches</a>
+                <a href="#" onclick="quickSearch('temple')">Temples</a>
+                <a href="#" onclick="quickSearch('country')">Countries</a>
+            </div>
+            <div class="foot-col">
+                <h4>Studio</h4>
+                <p><a href="https://www.jawadiftikhar.com" target="_blank">jawadiftikhar.com</a></p>
+                <p><a href="mailto:hello@jawadiftikhar.com" target="_blank">hello@jawadiftikhar.com</a></p>
+                <p>Islamabad · Pakistan</p>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <div class="wrap">
+                <span>© 2026 Roamly Travel — By <a href="https://www.jawadiftikhar.com" target="_blank">Jawad
+                        Iftikhar</a>.</span>
+                <span>All content documented with care</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="roamly_travel.js"></script>
+</body>
+
+</html>

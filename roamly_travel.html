@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roamly — Curated Travel Archive — By jawadiftikhar.com</title>
+    <meta name="description" content="A curated visual archive of remarkable beaches, temples and countries.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-wrap">
+            <a href="roamly_travel.html" class="logo">
+                <span class="logo-r">R</span>
+                <span class="logo-text">ROAMLY</span>
+                <span class="logo-vol">VOL. I</span>
+            </a>
+
+            <nav class="menu" id="menu">
+                <a href="roamly_travel.html" class="menu-link is-active">Index</a>
+                <a href="about_us.html" class="menu-link">About</a>
+                <a href="contact_us.html" class="menu-link">Contact</a>
+            </nav>
+
+            <div class="search-bar">
+                <svg class="search-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="m20 20-3.5-3.5"></path>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search beaches · temples · countries">
+                <button id="searchBtn" class="btn btn-dark">Search</button>
+                <button id="resetBtn" class="btn btn-line">Reset</button>
+            </div>
+
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- hero -->
+    <section class="hero">
+        <div class="hero-top">
+            <span>VOL. I — THE WANDER ARCHIVE</span>
+            <span>EST. 2015</span>
+        </div>
+
+        <div class="hero-lead">
+            <h1>A Study in <em>Place</em>,<br>Light &amp; Distance.</h1>
+            <p>A curated visual archive of the world's most remarkable beaches, temples and countries — observed
+                quietly, documented deliberately.</p>
+            <div class="hero-cta">
+                <button class="btn btn-dark btn-lg" onclick="document.getElementById('searchInput').focus()">Begin the
+                    Search</button>
+                <a href="#archive" class="btn btn-line btn-lg">View the Archive</a>
+            </div>
+        </div>
+
+        <div class="hero-figures">
+            <figure class="hero-fig is-wide">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400&q=80"
+                    alt="Shoreline study" loading="eager">
+                <figcaption>Study No. 01 — Shoreline</figcaption>
+            </figure>
+            <figure class="hero-fig">
+                <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=900&q=80" alt="Temple study"
+                    loading="lazy">
+                <figcaption>Study No. 02 — Temple</figcaption>
+            </figure>
+            <figure class="hero-fig">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80" alt="Country study"
+                    loading="lazy">
+                <figcaption>Study No. 03 — Country</figcaption>
+            </figure>
+        </div>
+
+        <div class="hero-nums">
+            <div class="num-item">
+                <span class="num" data-count="120">0</span>
+                <span class="num-label">Destinations documented</span>
+            </div>
+            <div class="num-item">
+                <span class="num" data-count="45">0</span>
+                <span class="num-label">Thousand travelers</span>
+            </div>
+            <div class="num-item">
+                <span class="num" data-count="10">0</span>
+                <span class="num-label">Years observing</span>
+            </div>
+            <div class="num-item">
+                <span class="num" data-count="6">0</span>
+                <span class="num-label">Continents covered</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- intro -->
+    <section class="intro">
+        <div class="wrap">
+            <div class="intro-layout">
+                <div class="intro-side">
+                    <span class="eyebrow">// Foreword</span>
+                </div>
+                <div class="intro-main">
+                    <h2>We document places the way an archivist documents artifacts — with <em>patience</em>, and with
+                        care.</h2>
+                    <div class="intro-cols">
+                        <p>Roamly isn't a booking engine. It's a visual archive — a collection of destinations observed
+                            over a decade of travel. Every entry is reviewed by hand, photographed with intention, and
+                            published only when it feels genuinely worth your time.</p>
+                        <p>We think travel advice should read like a letter from a well-traveled friend, not a sponsored
+                            list. The archive reflects that — one place at a time, documented with restraint.</p>
+                    </div>
+                    <div class="intro-sign">
+                        <span>— The Roamly Editorial Team</span>
+                        <span>Copenhagen · Lisbon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- archive / categories -->
+    <section class="archive" id="archive">
+        <div class="wrap">
+            <div class="head">
+                <div>
+                    <span class="eyebrow">// Selected Portfolios</span>
+                    <h2>Three collections.<br><em>One archive.</em></h2>
+                </div>
+                <span class="head-count">2024 — 2026 Archive</span>
+            </div>
+
+            <div class="cat-grid">
+                <article class="cat-card">
+                    <div class="cat-media">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80"
+                            alt="Beaches" loading="lazy">
+                    </div>
+                    <div class="cat-body">
+                        <span class="cat-num">01 / 03</span>
+                        <h3>Beaches</h3>
+                        <p>Golden sands, turquoise water, shorelines observed at slow pace.</p>
+                        <button class="link-btn" onclick="quickSearch('beach')">Explore Collection →</button>
+                    </div>
+                </article>
+
+                <article class="cat-card">
+                    <div class="cat-media">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80" alt="Temples"
+                            loading="lazy">
+                    </div>
+                    <div class="cat-body">
+                        <span class="cat-num">02 / 03</span>
+                        <h3>Temples</h3>
+                        <p>Sacred architecture, silent courtyards, quiet geometry.</p>
+                        <button class="link-btn" onclick="quickSearch('temple')">Explore Collection →</button>
+                    </div>
+                </article>
+
+                <article class="cat-card">
+                    <div class="cat-media">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1200&q=80"
+                            alt="Countries" loading="lazy">
+                    </div>
+                    <div class="cat-body">
+                        <span class="cat-num">03 / 03</span>
+                        <h3>Countries</h3>
+                        <p>Cultures, cities and landscapes worth crossing oceans for.</p>
+                        <button class="link-btn" onclick="quickSearch('country')">Explore Collection →</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- results injected here -->
+    <section class="results" id="resultsSection" hidden>
+        <div class="wrap">
+            <div class="head">
+                <div>
+                    <span class="eyebrow">// Curated Viewplates</span>
+                    <h2 id="resultsTitle">Recommended</h2>
+                </div>
+                <span class="head-count" id="resultsCount"></span>
+            </div>
+            <div id="results" class="results-grid"></div>
+        </div>
+    </section>
+
+    <!-- case study -->
+    <section class="case">
+        <div class="wrap">
+            <div class="case-layout">
+                <div class="case-side">
+                    <span class="eyebrow">// Focus Case Study</span>
+                </div>
+                <div class="case-main">
+                    <h2>The Geometry of Coastal Light.</h2>
+                    <p class="case-lede">An editorial investigation into how natural light reshapes our perception of
+                        shorelines — comparing the same stretch of coast across dawn, midday and dusk, documenting the
+                        quiet architecture of shadow and reflection.</p>
+                    <div class="case-meta">
+                        <div>
+                            <span class="meta-label">Medium</span>
+                            <span class="meta-value">Analog film · Digital</span>
+                        </div>
+                        <div>
+                            <span class="meta-label">Locations</span>
+                            <span class="meta-value">Iceland · Portugal · Japan</span>
+                        </div>
+                        <div>
+                            <span class="meta-label">Duration</span>
+                            <span class="meta-value">18 months</span>
+                        </div>
+                        <div>
+                            <span class="meta-label">Year</span>
+                            <span class="meta-value">2024 — 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery">
+        <div class="wrap">
+            <div class="head">
+                <div>
+                    <span class="eyebrow">// Visual Collections</span>
+                    <h2>Curated <em>Viewplates</em>.</h2>
+                </div>
+                <span class="head-count">Study No. 01 — 08</span>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="gal-item is-large">
+                    <img src="https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?w=1400&q=80"
+                        alt="Shoreline elevation" loading="lazy">
+                    <figcaption>Study No. 04 — Shoreline Elevation</figcaption>
+                </figure>
+                <figure class="gal-item">
+                    <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=900&q=80"
+                        alt="Temple geometry" loading="lazy">
+                    <figcaption>Study No. 05 — Temple Geometry</figcaption>
+                </figure>
+                <figure class="gal-item">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80" alt="Desert form"
+                        loading="lazy">
+                    <figcaption>Study No. 06 — Desert Form</figcaption>
+                </figure>
+                <figure class="gal-item">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80"
+                        alt="Urban monolith" loading="lazy">
+                    <figcaption>Study No. 07 — Urban Monolith</figcaption>
+                </figure>
+                <figure class="gal-item">
+                    <img src="https://images.unsplash.com/photo-1533050487297-09b450131914?w=900&q=80"
+                        alt="Mountain ridge" loading="lazy">
+                    <figcaption>Study No. 08 — Mountain Ridge</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- capabilities -->
+    <section class="caps">
+        <div class="wrap">
+            <div class="head">
+                <div>
+                    <span class="eyebrow">// Capabilities</span>
+                    <h2>Editorial <em>Offerings</em>.</h2>
+                </div>
+            </div>
+            <div class="caps-grid">
+                <div class="cap-item">
+                    <span class="cap-num">01</span>
+                    <h3>Destination Research</h3>
+                    <p>Hand-curated lists from real travel, not aggregated from feeds.</p>
+                </div>
+                <div class="cap-item">
+                    <span class="cap-num">02</span>
+                    <h3>Visual Documentation</h3>
+                    <p>Original photography and field notes from every location we cover.</p>
+                </div>
+                <div class="cap-item">
+                    <span class="cap-num">03</span>
+                    <h3>Editorial Writing</h3>
+                    <p>Long-form stories that give each destination its proper context.</p>
+                </div>
+                <div class="cap-item">
+                    <span class="cap-num">04</span>
+                    <h3>Archive Maintenance</h3>
+                    <p>Monthly reviews to keep every recommendation current and honest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="quotes">
+        <div class="wrap">
+            <div class="head">
+                <div>
+                    <span class="eyebrow">// Collaborative Reviews</span>
+                    <h2>Words from <em>travelers</em>.</h2>
+                </div>
+            </div>
+            <div class="quotes-grid">
+                <blockquote class="quote">
+                    <p>"Roamly sent me to a stretch of coast I'd never heard of. It became the defining week of my
+                        year."</p>
+                    <footer><strong>Elena M.</strong><span>Barcelona, Spain</span></footer>
+                </blockquote>
+                <blockquote class="quote">
+                    <p>"The temple recommendations were precise and quiet — exactly what I needed, exactly where I
+                        needed it."</p>
+                    <footer><strong>Kenji T.</strong><span>Tokyo, Japan</span></footer>
+                </blockquote>
+                <blockquote class="quote">
+                    <p>"Finally a travel site that reads like a friend's letter, not a sponsored list. Refreshing."</p>
+                    <footer><strong>Amara O.</strong><span>Lagos, Nigeria</span></footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- cta -->
+    <section class="cta">
+        <div class="wrap">
+            <div class="cta-box">
+                <span class="eyebrow">// Start a Visual Inquiry</span>
+                <h2>Begin your search through the <em>archive</em>.</h2>
+                <p>Enter a keyword — beach, temple, or country — and the archive will surface what we believe is worth
+                    your attention.</p>
+                <button class="btn btn-dark btn-lg" onclick="document.getElementById('searchInput').focus()">Search the
+                    Archive</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap footer-wrap">
+            <div class="foot-brand">
+                <div class="logo">
+                    <span class="logo-r">R</span>
+                    <span class="logo-text">ROAMLY</span>
+                </div>
+                <p>A curated visual archive of remarkable places.</p>
+                <div class="foot-social">
+                    <a href="https://www.linkedin.com/in/jawadiftikhar-dev/" target="_blank">Linkedin</a>
+                    <a href="https://github.com/jawadiftikhar-dev/roamlyTravel" target="_blank">GitHub</a>
+                    <a href="https://www.figma.com/@jawadiftikhar" target="_blank">Figma</a>
+                </div>
+            </div>
+            <div class="foot-col">
+                <h4>Index</h4>
+                <a href="roamly_travel.html">Home</a>
+                <a href="about_us.html">About</a>
+                <a href="contact_us.html">Contact</a>
+            </div>
+            <div class="foot-col">
+                <h4>Collections</h4>
+                <a href="#" onclick="quickSearch('beach')">Beaches</a>
+                <a href="#" onclick="quickSearch('temple')">Temples</a>
+                <a href="#" onclick="quickSearch('country')">Countries</a>
+            </div>
+            <div class="foot-col">
+                <h4>Studio</h4>
+                <p><a href="https://www.jawadiftikhar.com" target="_blank">jawadiftikhar.com</a></p>
+                <p><a href="mailto:hello@jawadiftikhar.com" target="_blank">hello@jawadiftikhar.com</a></p>
+                <p>Islamabad · Pakistan</p>
+            </div>
+        </div>
+        <div class="foot-bottom">
+            <div class="wrap">
+                <span>© 2026 Roamly Travel — By <a href="https://www.jawadiftikhar.com" target="_blank">Jawad
+                        Iftikhar</a>.</span>
+                <span>All content documented with care</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="roamly_travel.js"></script>
+</body>
+
+</html>
