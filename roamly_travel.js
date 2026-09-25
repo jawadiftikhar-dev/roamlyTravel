@@ -93,14 +93,14 @@ for (var i = 0; i < menuLinks.length; i++) {
 // --- search ---
 var searchInput = document.getElementById('searchInput');
 var searchBtn = document.getElementById('searchBtn');
-var resetBtn = document.getElementById('resetBtn');
+var clearBtn = document.getElementById('clearBtn');
 var resultsSection = document.getElementById('resultsSection');
 var resultsTitle = document.getElementById('resultsTitle');
 var resultsCount = document.getElementById('resultsCount');
 var resultsBox = document.getElementById('results');
 
 if (searchBtn) searchBtn.addEventListener('click', runSearch);
-if (resetBtn) resetBtn.addEventListener('click', clearSearch);
+if (clearBtn) clearBtn.addEventListener('click', clearSearch);
 if (searchInput) {
     searchInput.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') {
